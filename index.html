@@ -7,7 +7,11 @@
     <link rel="icon" type="image/x-icon" href="./public/favicon.png" />
     <link rel="stylesheet" href="./src/assets/styles/index.css" />
 
-    <title>Blitz Wallet</title>
+    <link rel="stylesheet" href="./src/assets/pages/home/home.css" />
+
+    <script src="./src/assets/pages/home/home.js" defer></script>
+
+    <title>Blitz Wallet | Bitcoin lightning wallet</title>
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -24,24 +28,81 @@
     gtag("config", "G-WNRJ7Y4RVE");
   </script>
   <body>
-    <main
-      style="
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-      "
-    >
-      <h1>COMING SOON</h1>
-      <p>
-        Follow
-        <a target="_blank" href="https://twitter.com/BlitzWallet1"
-          >@blitzwallet1</a
-        >
-        on twitter for updates
-      </p>
+    <main>
+      <section class="topSection">
+        <nav>
+          <img class="logo" src="./public/wordmark.png" />
+          <ul class="navItems">
+            <li class="navItem">Download</li>
+            <li class="navItem">Contact</li>
+            <li class="navItem">FAQ</li>
+            <li class="navItem">Blog</li>
+            <li class="navItem">
+              <img class="iconStyle" src="./src/assets/images/github.svg" />
+            </li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <div class="phone">
+            <img src="./src/assets/images/Iphone firstPage.webp" alt="" />
+          </div>
+          <div class="CTA">
+            <h1>Tomorrow's Bitcoin Wallet, Today.</h1>
+            <h2>Where Simplicity Meets Power in the Evolution of Bitcoin</h2>
+            <div class="appContainer">
+              <div class="app">
+                <img
+                  draggable="false"
+                  class="iconStyle"
+                  src="./src/assets/images/apple.svg"
+                />
+                <span>Coming Soon...</span>
+                <div class="screen"></div>
+              </div>
+              <div class="app">
+                <img
+                  draggable="false"
+                  class="iconStyle"
+                  src="./src/assets/images/google-play.png"
+                />
+                <span>Coming Soon...</span>
+                <div class="screen"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section></section>
+
+      <footer>
+        <div class="content">
+          <div class="privcyContent">
+            <p>@2023 Blitz Wallet LLC.</p>
+            <div>
+              <p>Privacy Policy</p>
+              <p>|</p>
+              <a
+                target="_blank"
+                href=" http://www.apache.org/licenses/LICENSE-2.0"
+                >Lisencse</a
+              >
+            </div>
+          </div>
+          <div class="img">
+            <img src="./public/favicon.png" alt="" />
+          </div>
+          <ul class="navItems">
+            <li class="navItem">Download</li>
+            <li class="navItem">Contact</li>
+            <li class="navItem">FAQ</li>
+            <li class="navItem">Blog</li>
+            <li class="navItem">
+              <img class="iconStyle" src="./src/assets/images/github.svg" />
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

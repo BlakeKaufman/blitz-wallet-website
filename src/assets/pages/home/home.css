@@ -1,15 +1,37 @@
 main {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.navItems {
+  width: 350px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.navItem {
+  font-size: 18px;
+  /* margin: 0 10px; */
+  cursor: pointer;
+  font-family: var(--description_font);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.navItem:hover {
+  color: var(--primary_color);
+}
+.navItem:last-child:hover {
+  transform: scale(1.3);
 }
 .topSection {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   /* background-image: url("../../images/hero_background.svg"); */
 }
 
@@ -25,24 +47,6 @@ nav {
 nav .logo {
   width: 300px;
 }
-nav .navItems {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-nav .navItem {
-  font-size: 18px;
-  margin: 0 10px;
-  cursor: pointer;
-  font-family: var(--description_font);
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-nav .navItem:hover {
-  color: var(--primary_color);
-}
-nav .navItem:last-child:hover {
-  transform: scale(1.3);
-}
 /* Hero section */
 
 .hero {
@@ -54,9 +58,15 @@ nav .navItem:last-child:hover {
   padding-top: 50px;
 }
 .hero .phone {
-  width: 250px;
-  height: 400px;
+  width: auto;
+  height: 500px;
   background-color: black;
+}
+.hero .phone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .hero .CTA {
   width: 670px;
@@ -94,4 +104,66 @@ nav .navItem:last-child:hover {
 }
 .hero .appContainer .app img {
   margin-right: 10px;
+}
+
+/* --------------------------------- */
+/* what is blitz wallet section */
+/* --------------------------------- */
+
+/* --------------------------------- */
+/* Footer */
+/* --------------------------------- */
+
+footer {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+footer .content {
+  max-width: 1200px;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+footer .privcyContent {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .privcyContent p:first-child {
+  margin-bottom: 10px;
+}
+footer .privcyContent div {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .img {
+  width: 100px;
+
+  height: 100px;
+}
+footer .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+footer .footerItems {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }

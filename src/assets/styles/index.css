@@ -7,6 +7,12 @@
   --primary_color: #0375f6;
   --secondary_color: #21374f;
   --tertiary_color: #009bf0;
+
+  --lm-background: #f2f2f2;
+  --dm-background: #0d0d0d;
+
+  --lm-text: #262626;
+  --dm-text: #d9d9d9;
 }
 
 * {
@@ -14,6 +20,20 @@
   margin: 0;
   box-sizing: border-box;
   border-radius: 0;
+}
+body {
+  height: auto;
+  background-color: var(--lm-background);
+}
+
+p,
+a,
+li {
+  font-family: var(--other_font);
+}
+
+a {
+  color: unset;
 }
 
 .iconStyle {
