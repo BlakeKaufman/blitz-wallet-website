@@ -44,8 +44,83 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 nav .logo {
   width: 300px;
+}
+nav .desktop {
+  display: block;
+}
+nav .mobile {
+  display: none;
+}
+nav .mobile {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+nav .mobile img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .mobileNavDropdown {
+  width: 100vw;
+  height: calc(100vh);
+
+  align-items: center;
+
+  display: none;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--lm-background);
+
+  flex-direction: column;
+}
+nav .mobileNavDropdown .navItems {
+  height: 350px;
+  flex-direction: column;
+}
+nav .mobileNavDropdown .imgContainer {
+  width: 95%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .mobileNavDropdown .closeMobileNavBTN {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+nav .mobileNavDropdown .appContainer {
+  width: 95%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+.mobileNavDropdown .appContainer .app {
+  width: 170px;
+  height: 45px;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 5px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: var(--description_font);
+}
+.mobileNavDropdown .appContainer .app img {
+  margin-right: 10px;
 }
 /* Hero section */
 
@@ -80,6 +155,7 @@ nav .logo {
   font-size: 24px;
   margin-bottom: 20px;
   font-family: var(--title_font);
+  text-align: center;
 }
 
 .hero .appContainer {
@@ -166,4 +242,41 @@ footer .footerItems {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .CTA {
+    margin-bottom: 50px;
+  }
+  .hero h1 {
+    text-align: center;
+  }
+  /* --------------------------------- */
+  /* Footer */
+  /* --------------------------------- */
+  footer .content {
+    height: 450px;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 730px) {
+  .hero .CTA {
+    width: 95%;
+  }
+  .hero h1 {
+    font-size: 40px;
+    text-wrap: wrap;
+  }
+  .hero h2 {
+    font-size: 20px;
+  }
+  nav .desktop {
+    display: none;
+  }
+  nav .mobile {
+    display: flex;
+  }
 }
