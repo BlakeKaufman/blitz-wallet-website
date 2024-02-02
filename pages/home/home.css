@@ -26,6 +26,9 @@ main {
 .navItem:last-child:hover {
   transform: scale(1.3);
 }
+.navItem a {
+  text-decoration: none;
+}
 .topSection {
   width: 100%;
   display: flex;
@@ -66,13 +69,14 @@ nav .mobile img {
 
 nav .mobileNavDropdown {
   width: 100vw;
-  height: calc(100vh);
+  height: 100dvh;
 
   align-items: center;
 
   display: none;
 
-  position: absolute;
+  position: fixed;
+
   top: 0;
   left: 0;
   z-index: 99;
@@ -133,9 +137,8 @@ nav .mobileNavDropdown .appContainer {
   padding-top: 50px;
 }
 .hero .phone {
-  width: auto;
+  width: 250px;
   height: 500px;
-  background-color: black;
 }
 .hero .phone img {
   width: 100%;
@@ -159,7 +162,8 @@ nav .mobileNavDropdown .appContainer {
 }
 
 .hero .appContainer {
-  width: 360px;
+  width: 95%;
+  max-width: 360px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -182,6 +186,9 @@ nav .mobileNavDropdown .appContainer {
   margin-right: 10px;
 }
 
+.hero .appContainer a {
+  text-decoration: none;
+}
 /* --------------------------------- */
 /* what is blitz wallet section */
 /* --------------------------------- */
@@ -209,7 +216,8 @@ footer .content {
 }
 
 footer .privcyContent {
-  width: 350px;
+  width: 95%;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,8 +244,9 @@ footer .img img {
   height: 100%;
   object-fit: contain;
 }
-footer .footerItems {
-  width: 300px;
+footer .navItems {
+  width: 95%;
+  max-width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -258,8 +267,10 @@ footer .footerItems {
   /* Footer */
   /* --------------------------------- */
   footer .content {
-    height: 450px;
     flex-direction: column-reverse;
+  }
+  footer .img {
+    margin: 50px 0;
   }
 }
 @media screen and (max-width: 730px) {
@@ -278,5 +289,44 @@ footer .footerItems {
   }
   nav .mobile {
     display: flex;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav .logo {
+    width: 230px;
+  }
+  .hero .CTA {
+    width: 95%;
+  }
+  .hero h1 {
+    font-size: 35px;
+    text-wrap: wrap;
+  }
+  .hero h2 {
+    font-size: 18px;
+  }
+  .hero .phone {
+    height: 400px;
+    width: 200px;
+  }
+
+  footer .navItems {
+    height: 250px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero h1 {
+    font-size: 28px;
+    text-wrap: wrap;
+  }
+  .hero h2 {
+    font-size: 16px;
+  }
+  .hero .appContainer {
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
   }
 }

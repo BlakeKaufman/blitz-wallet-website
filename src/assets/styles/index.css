@@ -22,7 +22,7 @@
   border-radius: 0;
 }
 body {
-  height: auto;
+  height: fit-content;
   background-color: var(--lm-background);
 }
 
