@@ -24,7 +24,7 @@ export async function handler(event, context) {
           _contentAvailable: true,
           mutableContent: true,
           // title: "Blitz Wallet",
-          // body: `Caught incoming payment`,
+          // body: `Sent from Backend`,
           data: Data,
         },
       ]);

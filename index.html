@@ -6,14 +6,15 @@
 
     <link rel="icon" type="image/x-icon" href="./public/favicon.png" />
     <link rel="stylesheet" href="./src/assets/styles/index.css" />
-
+    <link rel="stylesheet" href="./src/assets/styles/navbar_footer.css" />
     <link rel="stylesheet" href="./pages/home/home.css" />
+
     <meta
       name="description"
       content="Blitz wallet is a fully open-source Bitcoin lightning wallet that merges the fast capabilities of the lighting network with the security of self-custodial management at a price unmatched by competitors."
     />
 
-    <script src="./pages/home/home.js" defer></script>
+    <!-- <script src="./src/js/navbar.js" defer></script> -->
 
     <title>Blitz Wallet | Bitcoin lightning wallet</title>
   </head>
@@ -32,146 +33,202 @@
     gtag("config", "G-WNRJ7Y4RVE");
   </script>
   <body>
-    <main>
-      <section class="topSection">
-        <nav>
+    <!-- <nav>
+      <div class="navContent">
+        <img
+          alt="blitz wallet full text logo"
+          class="logo"
+          src="./public/wordmark.png"
+        />
+        <div class="desktop">
+          <ul class="navItems">
+            <li class="navItem">
+              <a href="./pages/download/">Download</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/donate/">Donate</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">Contact</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">FAQ</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile mobileNavBTN">
           <img
-            alt="blitz wallet full text logo"
-            class="logo"
-            src="./public/wordmark.png"
+            src="./src/assets/images/hamburger.png"
+            alt="hamburger icon for mobile nav"
           />
-          <div class="desktop">
-            <ul class="navItems">
-              <li class="navItem">
-                <a href="./pages/notBuildYet/">Download</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">Contact</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">FAQ</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">Blog</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">
-                  <img
-                    alt="github icon to show blitz wallet open source code"
-                    class="iconStyle"
-                    src="./src/assets/images/github.svg"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="mobile mobileNavBTN">
+        </div>
+        <div class="mobileNavDropdown">
+          <div class="imgContainer">
             <img
-              src="./src/assets/images/hamburger.png"
-              alt="hamburger icon for mobile nav"
+              class="iconStyle closeMobileNavBTN"
+              src="./src/assets/images/xIcon.svg"
+              alt="x icon to close the mobile nav dropdown"
             />
           </div>
-          <div class="mobileNavDropdown">
-            <div class="imgContainer">
+          <ul class="navItems">
+            <li class="navItem">
+              <a href="./pages/download/">Download</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/donate/">Donate</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">Contact</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">FAQ</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/notBuildYet">Blog</a>
+            </li>
+          </ul>
+          <div class="appContainer">
+            <a href="https://testflight.apple.com/join/fh56Swuk" class="app">
               <img
-                class="iconStyle closeMobileNavBTN"
-                src="./src/assets/images/xIcon.svg"
-                alt="x icon to close the mobile nav dropdown"
+                alt="apple icon to show if the app is doanloadable on app store"
+                draggable="false"
+                class="iconStyle"
+                src="./src/assets/images/apple.svg"
               />
-            </div>
-            <ul class="navItems">
-              <li class="navItem">
-                <a href="./pages/notBuildYet">Download</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">Contact</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">FAQ</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">Blog</a>
-              </li>
-              <li class="navItem">
-                <a href="./pages/notBuildYet">
-                  <img
-                    alt="github icon to show blitz wallet open source code"
-                    class="iconStyle"
-                    src="./src/assets/images/github.svg"
-                /></a>
-              </li>
-            </ul>
-            <div class="appContainer">
-              <div class="app">
-                <img
-                  alt="apple icon to show if the app is doanloadable on app store"
-                  draggable="false"
-                  class="iconStyle"
-                  src="./src/assets/images/apple.svg"
-                />
-                <span>Coming Soon...</span>
-                <div class="screen"></div>
-              </div>
-              <div class="app">
-                <img
-                  draggable="false"
-                  alt="Google playstore icon to show if app is downlaodable on goodle playstore"
-                  class="iconStyle"
-                  src="./src/assets/images/google-play.png"
-                />
-                <span>Coming Soon...</span>
-                <div class="screen"></div>
-              </div>
-            </div>
+              <span>Testflight</span>
+              <div class="screen"></div>
+            </a>
+            <a href="../../V-1.0.3-Feb7,2024.apk" download class="app">
+              <img
+                draggable="false"
+                alt="Google playstore icon to show if app is downlaodable on goodle playstore"
+                class="iconStyle"
+                src="./src/assets/images/google-play.png"
+              />
+              <span>Android APK</span>
+              <div class="screen"></div>
+            </a>
           </div>
-        </nav>
-        <div class="hero">
-          <div class="phone">
-            <img
-              alt="Image of blitz wallet homepage showing bitcoin lightning transactions"
-              src="./src/assets/images/Iphone firstPage.webp"
-            />
-          </div>
-          <div class="CTA">
-            <h1>Tomorrow's Bitcoin Wallet, Today.</h1>
-            <h2>Where Simplicity Meets Power in the Evolution of Bitcoin</h2>
-            <div class="appContainer">
-              <a href="./pages/notBuildYet">
-                <div class="app">
-                  <img
-                    alt="apple icon to show if the app is doanloadable on app store"
-                    draggable="false"
-                    class="iconStyle"
-                    src="./src/assets/images/apple.svg"
-                  />
-                  <span>Coming Soon...</span>
-                  <div class="screen"></div>
-                </div>
-              </a>
-              <a href="./pages/notBuildYet">
-                <div class="app">
-                  <img
-                    alt="Google playstore icon to show if app is downlaodable on goodle playstore"
-                    draggable="false"
-                    class="iconStyle"
-                    src="./src/assets/images/google-play.png"
-                  />
-                  <span>Coming Soon...</span>
-                  <div class="screen"></div>
-                </div>
-              </a>
-            </div>
+        </div>
+      </div>
+    </nav> -->
+    <main>
+      <section class="hero">
+        <div class="CTA">
+          <h1>Tomorrow's Bitcoin Wallet, Today.</h1>
+          <p class="headerP">
+            Harness the power of the<span class="pb"> Breez SDK</span>,
+            <span class="pb">Boltz</span>, and
+            <span class="pb"> Blockstream Greenlight </span> to create an
+            unforgetable Bitcoin Lightning Experience.
+          </p>
+          <div class="appCards">
+            <a href="https://testflight.apple.com/join/fh56Swuk" class="card">
+              <div class="flagTip"></div>
+              <p class="beta_p">Beta</p>
+              <img
+                alt="apple icon to show if the app is doanloadable on app store"
+                draggable="false"
+                class="iconStyle"
+                src="./src/assets/images/apple.svg"
+              />
+              <p>IPHONE</p>
+            </a>
+            <a href="../../V-1.0.3-Feb7,2024.apk" download class="card">
+              <div class="flagTip"></div>
+              <p class="beta_p">Beta</p>
+
+              <img
+                draggable="false"
+                alt="Google playstore icon to show if app is downlaodable on goodle playstore"
+                class="iconStyle"
+                src="./src/assets/images/google-play.png"
+              />
+
+              <p>ANDROID</p>
+            </a>
           </div>
         </div>
       </section>
 
-      <section></section>
+      <!-- <section class="ourMission">
+        <h2>Hello.</h2>
+        <p class="top_p">
+          My name is Blake Kaufman, a 20-year-old pleb and the creator of Blitz
+          Wallet. Growing up, I was taught to always leave a space better than
+          when I came into it. And I knew that one day, I was going to be able
+          to create something that could help the world.
+        </p>
 
+        <p class="top_p">
+          Four years ago, when I got into Bitcoin, I realized that money is the
+          most powerful motivator. And, to have corrupt money means having
+          corrupt motivations. But it also means, that if we can onboard people
+          to a money that cannot be corrupted, you can have a purer form of
+          motivation.
+        </p>
+        <p class="top_p">
+          And from that realization, I made it my mission to onboard users to
+          Bitcoin. Because if I can move people from a system of corruption to a
+          system of hope, that's more of an impact than I could have ever
+          dreamed of having on the world.
+        </p>
+        <p class="bottom_p">
+          That's why, unlike a traditional Bitcoin Lightning Wallet, Blitz does
+          not collect revenue from users' use. This means all a user has to pay
+          for are the lightning expenses.
+        </p>
+      </section> -->
+      <!-- <section class="poweredBy">
+        <h2>Annoucing <span class="pb"> Blitz Wallet </span></h2>
+        <p>Powered by the lastest lightning technology</p>
+        <div class="companyContainer">
+          <img src="./src/assets/images/greenlight_for_web.svg" alt="" />
+          <img
+            class="breezFilter"
+            src="./src/assets/images/logo-breez-header.svg"
+            alt=""
+          />
+
+          <img src="./src/assets/images/boltz-1395d097.svg" alt="" />
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>What is Blitz Wallet?</h2>
+        <p class="quickDesc">
+          Blitz Wallet is a self-custodial Bitcoin lightning wallet. What does
+          that mean?
+        </p>
+        <p>
+          <span class="blueHighlight">The Bitcoin Lightning network</span> is a
+          second-layer solution built on top of the Bitcoin blockchain. The
+          Lightning Network aims to enable fast, scalable, and low-cost
+          transactions to make Bitcoin more practical for everyday transactions,
+          such as retail purchases, while maintaining the security and
+          decentralization features of the underlying blockchain.
+        </p>
+        <p>
+          <span class="blueHighlight">Self-custodial</span> in Bitcoin means you
+          have complete control over your Bitcoin. You manage it yourself
+          without relying on others like banks or companies. The security of
+          your Bitcoin relies on the safe custody of the seed phrase, ensuring
+          that you alone are the only one to have access to your funds. However,
+          it's important to remember that with self-custody comes absolute
+          responsibility; losing your seed phrases means losing access to your
+          funds.
+        </p>
+      </section> -->
+      <!-- 
       <footer>
         <div class="content">
           <div class="privcyContent">
             <p>@2023 Blitz Wallet LLC.</p>
             <div>
-              <a href="./pages/notBuildYet"> <p>Privacy Policy</p></a>
+              <a href="./pages/privacyPolicy/"> <p>Privacy Policy</p></a>
 
               <p>|</p>
               <a
@@ -186,7 +243,10 @@
           </div>
           <ul class="navItems">
             <li class="navItem">
-              <a href="./pages/notBuildYet">Download</a>
+              <a href="./pages/download/">Download</a>
+            </li>
+            <li class="navItem">
+              <a href="./pages/donate/">Donate</a>
             </li>
             <li class="navItem">
               <a href="./pages/notBuildYet">Contact</a>
@@ -207,7 +267,14 @@
             </li>
           </ul>
         </div>
-      </footer>
+      </footer> -->
     </main>
   </body>
+  <script src="wallycore/wallycore.bundle.min.js"></script>
+  <script>
+    WallyInit.then((wally) => {
+      console.log(wally.bip39_get_word(null, 10));
+    });
+    // or `const wally = await WallyInit`
+  </script>
 </html>

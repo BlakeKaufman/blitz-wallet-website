@@ -8,6 +8,8 @@
   --secondary_color: #21374f;
   --tertiary_color: #009bf0;
 
+  --text_contrast_to_secondary: #9dcbff;
+
   --lm-background: #f2f2f2;
   --dm-background: #0d0d0d;
 
@@ -24,6 +26,12 @@
 body {
   height: fit-content;
   background-color: var(--lm-background);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--title_font);
 }
 
 p,
